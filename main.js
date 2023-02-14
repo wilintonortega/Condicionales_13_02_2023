@@ -1,5 +1,5 @@
-let a=prompt("digita el numero a");
-let b=prompt("digita el numero b");
+let edad=prompt("digita el numero la edad");
+
 
 //CONDICIONAL SIMPLE IF
 
@@ -20,8 +20,23 @@ let b=prompt("digita el numero b");
 //     //... 
 //  }
 
-if (a>b) {
-    console.log(`${a} es mayor ${b}`);
-} else {
-    console.log(`${b} es mayor ${a}`);    
+// if (a>b) {
+//     console.log(`${a} es mayor ${b}`);
+// } else {
+//     console.log(`${b} es mayor ${a}`);    
+// }
+
+if (edad>=18 && edad<=29 ) {
+    console.log(`Tienes ${edad} años eres mayor, un joven mayor de edad`);
+} 
+else if (edad>=30 && edad<=49 ) {
+    console.log(`Tienes ${edad} años eres mayor, ya tienes experiencia`);
+}else if(edad>=50){
+    console.log(`Tienes ${edad} años eres mayor, ya tienes experiencia y debes cuidarte`);
+}
+else if(edad >1){
+    console.log(`Eres menor de edad tienes ${edad} años, aprovecha el tiempo`);
+}
+else{
+    console.log("Error ingresa nuevamente tu edad");
 }
